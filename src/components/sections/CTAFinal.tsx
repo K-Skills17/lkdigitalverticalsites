@@ -33,7 +33,7 @@ export default function CTAFinal() {
             {finalCta.cta}
           </a>
           <a
-            href={`https://wa.me/5511952823271?text=${encodeURIComponent("Olá, gostaria de saber mais sobre a LK Digital.")}`}
+            href={`https://wa.me/5511959920554?text=${encodeURIComponent("Olá, gostaria de saber mais sobre a LK Digital.")}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto px-8 py-4 border border-white/20 text-white/70 hover:text-white hover:border-white/40 font-medium rounded-md transition-all duration-200 text-center text-sm"

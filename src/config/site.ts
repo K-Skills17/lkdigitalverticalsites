@@ -8,7 +8,7 @@ export const siteConfig = {
   tagline: "Sistemas de Aquisição e Conversão para Negócios de Alto Valor",
   url: "https://lkdigital.org",
   email: "contato@lkdigital.org",
-  whatsapp: "5511952823271",
+  whatsapp: "5511959920554",
   social: {
     instagram: "https://instagram.com/lkdigital",
     linkedin: "https://linkedin.com/company/lkdigital",

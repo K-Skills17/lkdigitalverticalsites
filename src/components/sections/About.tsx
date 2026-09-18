@@ -38,7 +38,7 @@ export default function About() {
               <div className="absolute -inset-[3px] rounded-2xl bg-gradient-to-br from-[#DC6D25]/40 via-transparent to-[#DC6D25]/10" aria-hidden="true" />
               <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-[#0d2038]">
                 <Image
-                  src="/images/founder-2.jpg"
+                  src="/images/founder-1.jpg"
                   alt="Fundador da LK Digital"
                   fill
                   className="object-cover object-top"

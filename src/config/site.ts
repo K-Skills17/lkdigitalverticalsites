@@ -83,27 +83,27 @@ export const system = {
     {
       number: "01",
       title: "ATRAIR",
-      items: ["Google", "Social", "Ads", "Maps", "Organic"],
+      items: ["Google", "Redes Sociais", "Anúncios", "Maps", "Orgânico"],
     },
     {
       number: "02",
       title: "CONVERTER",
-      items: ["Landing page", "Website", "CTA", "Offer"],
+      items: ["Landing page", "Website", "CTA", "Oferta"],
     },
     {
       number: "03",
       title: "QUALIFICAR",
-      items: ["Intent", "Need", "Budget", "Timing", "Fit"],
+      items: ["Intenção", "Necessidade", "Orçamento", "Momento", "Fit"],
     },
     {
       number: "04",
       title: "RECUPERAR",
-      items: ["Follow-up", "Unanswered leads", "Lost quotes", "Reactivation"],
+      items: ["Follow-up", "Leads sem resposta", "Orçamentos perdidos", "Reativação"],
     },
     {
       number: "05",
       title: "OTIMIZAR",
-      items: ["Tracking", "Data", "Testing", "Conversion rate"],
+      items: ["Rastreamento", "Dados", "Testes", "Taxa de conversão"],
     },
   ],
   footer: "Não é sobre adicionar mais ferramentas. É sobre fazer cada etapa trabalhar melhor junto.",
@@ -236,15 +236,15 @@ export const lab = {
   sub: "Analisamos empresas, jornadas de compra e pontos de conversão para identificar padrões que podem ser transformados em sistemas repetíveis.",
   cards: [
     {
-      title: "Market Intelligence",
+      title: "Inteligência de Mercado",
       body: "O que as empresas estão fazendo com sua presença digital.",
     },
     {
-      title: "Conversion Experiments",
+      title: "Experimentos de Conversão",
       body: "O que muda quando otimizamos cada etapa da jornada.",
     },
     {
-      title: "Proprietary Playbooks",
+      title: "Metodologias Proprietárias",
       body: "O que funciona repetidamente — documentado como metodologia.",
     },
   ],
@@ -255,7 +255,7 @@ export const insights = {
   categories: [
     {
       title: "Conversão",
-      desc: "Por que prospects não se tornam oportunidades.",
+      desc: "Por que potenciais clientes não se tornam oportunidades.",
       href: "/blog",
     },
     {

@@ -3,7 +3,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
 const API_BASE = "https://lk-chatbot-production.up.railway.app/api/webchat";
-const TENANT_ID = process.env.NEXT_PUBLIC_TENANT_ID ?? "f340af30-c77f-4438-9c21-d952d7c52918";
+const TENANT_ID = process.env.NEXT_PUBLIC_TENANT_ID ?? "ee194042-6d1e-4028-9163-d6d2b591280a";
+const API_KEY = process.env.NEXT_PUBLIC_CHAT_API_KEY ?? "lk_ed5cbdbdd663586b02641b67f16ff06a8c35616fbc6b63ef";
 const STORAGE_KEY = `lk_chat_session_${TENANT_ID}`;
 
 interface Message {
@@ -39,7 +40,7 @@ export default function ChatWidget() {
 
   useEffect(() => {
     if (!open || !sessionId || messages.length > 0) return;
-    fetch(`${API_BASE}/${TENANT_ID}/messages/${sessionId}`)
+    fetch(`${API_BASE}/${TENANT_ID}/messages/${sessionId}`, { headers: { "Authorization": "Bearer " + API_KEY } })
       .then((r) => r.json())
       .then((data) => {
         if (data.messages?.length > 0) setMessages(data.messages);
@@ -58,7 +59,7 @@ export default function ChatWidget() {
   const createSession = useCallback(async (): Promise<string> => {
     const res = await fetch(`${API_BASE}/${TENANT_ID}/session`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + API_KEY },
       body: JSON.stringify({}),
     });
     const data = await res.json();
@@ -79,7 +80,7 @@ export default function ChatWidget() {
       if (!sid) sid = await createSession();
       const res = await fetch(`${API_BASE}/${TENANT_ID}/message`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + API_KEY },
         body: JSON.stringify({ sessionId: sid, text }),
       });
       const data = await res.json();
